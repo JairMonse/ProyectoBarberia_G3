@@ -60,7 +60,7 @@ export class ClienteComponent {
   }
 
   mensajeExito(texto: string) {
-    this._snackBar.open(`El Alumno fue ${texto} con exito`, 'Sistema', {
+    this._snackBar.open(`El cliente fue ${texto} con exito`, 'Sistema', {
       duration: 4000,
       horizontalPosition: 'right',
       verticalPosition: 'top'
