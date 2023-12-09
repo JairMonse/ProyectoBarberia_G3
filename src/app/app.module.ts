@@ -19,6 +19,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatRadioModule } from '@angular/material/radio';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -47,7 +48,8 @@ import { DeleteBarberosComponent } from './admins/components/barberos/delete-bar
 import { ExperienciaPipe } from './core/pipes/experiencia.pipe';
 import { BarberosPageComponent } from './components/barberos-page/barberos-page.component';
 
-import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
+import { NgxMaterialTimepickerModule } from 'ngx-material-timepicker';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -100,9 +102,10 @@ import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
     MatSidenavModule,
     MatExpansionModule,
     MatDialogModule,
+    MatProgressBarModule,
 
-    NgxMaterialTimepickerModule
-
+    NgxMaterialTimepickerModule,
+    HttpClientModule
   ],
 
   providers: [],
